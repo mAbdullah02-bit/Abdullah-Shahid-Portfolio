@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand color tokens from Event Horizon design sheet */
+  --color-background: #111415;
+  --color-surface-container: #1d2021;
+  --color-surface-container-high: #282a2b;
+  --color-surface-container-highest: #323536;
+  --color-surface-container-lowest: #0c0f10;
+  --color-on-surface: #e1e3e4;
+  --color-on-surface-variant: #e2bfb0;
+  --color-primary-container: #ff6b00;
+  --color-tertiary-container: #059eff;
+  --color-secondary-container: #454955;
+  
+  /* Font Families */
+  --font-display-lg: "Outfit", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+
+  /* Custom animation keyframes */
+  --animate-spin-slow: spin 20s linear infinite;
+}
+
+/* Base custom styles */
+body {
+  font-family: var(--font-body-md);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Premium Scrollbar layout overrides */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111415;
+}
+::-webkit-scrollbar-thumb {
+  background: #323536;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6b00;
+}
+
+/* Glassmorphism custom design token utility classes */
+.glass-card {
+  background: rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark .glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Custom background mesh grid */
+.bg-mesh-dark {
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(255, 107, 0, 0.03) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(5, 158, 255, 0.03) 0%, transparent 40%);
+}
+
+.bg-mesh-light {
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(255, 107, 0, 0.04) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(5, 158, 255, 0.04) 0%, transparent 40%);
+}
