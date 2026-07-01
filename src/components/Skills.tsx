@@ -17,7 +17,7 @@ export default function Skills() {
     { name: 'React.js & Tailwind', proficiency: 80, icon: <Atom className="h-5 w-5" />, category: 'Web Dev' },
     { name: 'Python (Pandas,Numpy,Scikit-learn,Matplotlib)', proficiency: 85, icon: <Binary className="h-5 w-5" />, category: 'Data Analysis' },
     { name: 'Power BI & Excel', proficiency: 85, icon: <Cpu className="h-5 w-5" />, category: 'Data Analysis' },
-    { name: 'MySQL & Firebase', proficiency: 85, icon: <Flame className="h-5 w-5" />, category: 'App Dev' },
+    { name: 'MySQL & Firebase', proficiency: 85, icon: <Flame className="h-5 w-5" />, category: 'Others' },
     { name: 'Docker & Linux', proficiency: 75, icon: <Zap className="h-5 w-5" />, category: 'Others' },
     { name: 'C++ & Algorithms', proficiency: 85, icon: <Award className="h-5 w-5" />, category: 'Others' },
     { name: 'Figma UI/UX', proficiency: 85, icon: <Sparkles className="h-5 w-5" />, category: 'Others' },

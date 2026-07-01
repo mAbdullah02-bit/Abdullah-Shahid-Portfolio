@@ -1,7 +1,7 @@
 import { useState, FormEvent, ChangeEvent } from 'react';
 import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, Send, Loader2, MessageSquare, CheckCircle } from 'lucide-react';
-
+import devWorkingImg from '../assets/images/developer_working_1782715818127.jpg';
 interface ContactProps {
   onSubmitSuccess: (fullName: string) => void;
 }
@@ -126,7 +126,7 @@ export default function Contact({ onSubmitSuccess }: ContactProps) {
               }}
               className="w-full h-auto object-contain rounded-2xl shadow-lg border border-neutral-200/30 dark:border-white/10"
               referrerPolicy="no-referrer"
-              src="/src/assets/images/developer_working_1782715818127.jpg"
+              src={devWorkingImg}
               alt="Abdullah Shahid Support Representative with Smartphone"
             />
           </div>

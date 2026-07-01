@@ -1,6 +1,6 @@
 import { Award, Code2, Sparkles, BookOpen } from 'lucide-react';
 import { motion } from 'motion/react';
-
+import devWorkingImg from '../assets/images/developer_working_1782715818127.jpg';
 interface AboutProps {
   onOpenLearnMore: () => void;
 }
@@ -55,7 +55,7 @@ export default function About({ onOpenLearnMore }: AboutProps) {
               transition={{ type: 'spring', stiffness: 300, damping: 20 }}
               className="w-full h-auto object-contain rounded-2xl shadow-xl border border-neutral-200/30 dark:border-white/10 relative z-10"
               referrerPolicy="no-referrer"
-              src="/src/assets/images/developer_working_1782715818127.jpg"
+             src={devWorkingImg}
               alt="Abdullah Shahid Developer at Work"
             />
           </div>

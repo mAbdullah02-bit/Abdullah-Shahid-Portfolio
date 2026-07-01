@@ -1,6 +1,6 @@
 import { Share2, Video, Github, MessageSquare, Download, Mail, Linkedin } from 'lucide-react';
 import { motion } from 'motion/react';
-
+import profilePic from '../assets/images/picofme (1).png';
 interface HeroProps {
   onScrollToSection: (sectionId: string) => void;
   onOpenShare: () => void;
@@ -166,7 +166,7 @@ export default function Hero({ onScrollToSection, onOpenShare, onOpenVideo, onDo
             className="w-full h-full object-contain rounded-2xl shadow-xl border border-neutral-200/30 dark:border-white/10"
             referrerPolicy="no-referrer"
             // /src/assets/images/developer_hero_1782715795270.jpg
-            src="/src/assets/images/picofme (1).png"
+           src={profilePic}
             alt="3D Character Abdullah Shahid Developer with beard and glasses"
           />
 
